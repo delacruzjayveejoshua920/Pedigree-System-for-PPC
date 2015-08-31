@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	overflow-x: hidden;
+}
+
+.adsHeader{
+	
+	margin:auto;
+	margin-top: 50px;
+	padding: 5px;
+	
+}
+
+
+.adsFooter{
+	margin-buttom: 20px;
+}
+
+.adSide{
+	margin-top: 10px;
+	
+}
+
+.header{
+	margin-left: auto;
+}
+
+.content{
+	color: black;
+}
+
+.navbar{
+	background-color: #363636;
+}
+
+
+.footer{
+	margin-top: 10px;
+	margin-buttom: 10px;
+}

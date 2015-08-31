@@ -1,0 +1,78 @@
+@CHARSET "ISO-8859-1";
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.contentlogin{
+	height: 50%;
+	width: 40%;
+	background-color: #363636;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 25px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.table{
+	color: white;
+}
+
+td{
+	color: white;
+}
+
+
+.content {
+	margin: auto;
+	margin-top: 20px;
+	
+	width: 95%;
+	height: 100%;
+	background-color: #363636;
+	overflow: scroll;
+}
+
+.forms {
+	margin-left: 20px;
+}
+
+img{
+    margin-top: -1px;
+}
+	
+h2{
+	color: white;
+}
+
+		
+label{
+	color:white;
+}
+
+
+.form-control{
+	width: 100%;
+}
+
+.adsHeader{
+	
+	margin:auto;
+	padding: 5px;
+	
+}
+
+
+.adsFooter{
+	margin-buttom: 30px;
+}
+
+.adSide{
+	margin-top: 10px;
+	
+}
+
+.header{
+	margin-left: auto;
+}

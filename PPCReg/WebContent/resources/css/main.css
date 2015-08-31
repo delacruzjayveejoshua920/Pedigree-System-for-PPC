@@ -1,0 +1,394 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	
+	font-family:Century Gothic;
+	font-size:17px;
+	background-image:url('../image/SHAR-Bg-Hotel-Lobby.jpg');
+}
+
+body.noBG{
+	background-color:white;
+	background-image:none;
+}
+
+#cf {
+  position:absolute;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+  z-index:-1;
+  width:100%;
+  height:100%;
+}
+
+
+
+#cf img {
+  position:absolute;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+
+.container{
+	width:100%;
+	min-height:660px;
+	max-height:660px;
+	margin:auto;
+	/*background-color:white;*/
+}
+
+.withBg{
+	
+}
+
+.header{
+	width:1265px;
+	height:35px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:10px;
+	margin:0 auto;
+	background-color:white;
+	border-bottom:1px solid black;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+	background-repeat:none;
+	
+}
+
+.header-image{
+	float:left;
+	margin-top:-12px;
+}
+
+.footer{
+	left: 0px;
+	bottom: 0;
+	position: absolute;
+	width: 1246px;
+	height: .5px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 10px;
+	margin: 0 0;
+	background-color: #000;
+}
+
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-ul > li{
+	display:inline;
+}
+
+
+.navigation{
+	width:1080px;
+	height:110px;
+	margin:0 auto;
+	margin-top:10px;
+	text-align:center;
+}
+
+.image-div{
+	width:100%;
+	text-align:center;
+}
+
+.imageSize{
+	width:800px;
+}
+
+.listPageContainer{
+	width:100%;
+}
+
+.listPage{
+	float:left;
+	width:180px;
+}
+.body{
+	width:1080px;
+	padding:15px;
+	padding-bottom:5px;
+	min-height:495px;
+	margin:0 auto;
+}
+
+.sidebar > li > img , .sidebar > li > a >img  {
+	width:70px;
+	opacity: 0.4;
+	-webkit-transition:opacity 1s;
+	transition:opacity 1s;
+}
+
+.sidebar{
+	text-align:center;
+}
+
+.sidebar > li > img:hover, .sidebar > li > a > img:hover {
+	width:70px;
+	opacity: 1;
+}
+
+.sidebar > li > img:hover + .popText  , .sidebar > li > a> img:hover + .popText{
+	width:140px;
+	padding-left:30px;
+	
+}
+
+.sidebar > li > img:hover + .popText > .text, .sidebar > li > a > img:hover + .popText > .text{
+	opacity:1;
+	
+}
+
+.text{
+	opacity: 0;
+	-webkit-transition:opacity .5s;
+	transition:opacity .5s;
+}
+
+.sidebar > li{
+	margin-top:5px;
+	margin-bottom:-20px;
+	height:75px;
+}
+
+.header-image > img{
+	width:140px;
+}
+
+.bordered{
+	border:7px #2495fd solid;
+	border-radius:5px;
+	width:900px;
+	float:left;
+	margin-top:15px;
+	margin-left:90px;
+	-webkit-box-shadow: 0 14px 9px -6px #2c0c00;
+	   -moz-box-shadow: 0 14px 9px -6px #2c0c00;
+	        box-shadow: 0 14px 9px -6px #2c0c00;
+	background-color: rgba(255,255,255,1);
+}
+
+.popText{
+	
+	position: relative;
+top: -60px;
+background-color: blue;
+background: #2c76ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2c76ce 1%, #053989 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2c76ce), color-stop(98%,#053989)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2c76ce 1%,#053989 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c76ce', endColorstr='#053989',GradientType=0 ); /* IE6-9 */
+text-align: left;
+left: 90px;
+width: 0px;
+height: 35px;
+font-weight: bold;
+padding-left: 0px;
+padding-top: 12px;
+color: white;
+z-index: -1;
+border-radius: 10px;
+-webkit-transition: width .5s; 
+ transition: width .5s;
+}
+
+.scrolling{
+	max-height:400px;
+	min-height:400px;
+	overflow-y:auto;
+	width:910px;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+.clear{
+	clear:both;
+}
+
+.list-table{
+	width:865px;
+	margin:0 auto;
+	border-collapse:separate; 
+	border-spacing:2px;
+	font-size:12px;
+}
+
+
+
+.footer-text{
+	color:white;
+	font-size:8px;
+	display:none;
+}
+
+.list-table > tbody > tr > td{
+	width:900px;
+	height:20px;
+	padding:5px;
+	width:140px;
+}
+
+.scrolling > table{
+	margin-left:19px;
+}
+
+.list-table > thead > tr > th{
+	font-weight: bold;
+	height:20px;
+	padding:5px;
+	width:205px;
+	background: #2c76ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2c76ce 1%, #053989 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2c76ce), color-stop(98%,#053989)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2c76ce 1%,#053989 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c76ce', endColorstr='#053989',GradientType=0 ); /* IE6-9 */
+	color:white;
+	
+}
+
+/*053989 2c76ce*/
+
+.list-table > thead > tr{
+	
+}
+
+/* the first 'th' within the first 'tr' of the 'thead': */
+thead tr:first-child th:first-child {
+    border-radius: 0.6em 0 0 0.6em;
+}
+/* the last 'th' within the first 'tr' of the 'thead': */
+thead tr:first-child th:last-child {
+    border-radius: 0 0.6em 0.6em 0;
+}
+/* the first 'td' within the last 'tr' of the 'tbody': */
+tbody tr td:first-child {
+    border-radius: 0.6em 0 0 0.6em;
+}
+/* the last 'td' within the last 'tr' of the 'tbody': */
+tbody tr td:last-child {
+    border-radius: 0 0.6em 0.6em 0;
+}
+
+tbody tr td{
+	text-align:center;
+	padding:7px;
+}
+
+.linkBtn{
+	text-decoration:none;
+	background: #2c76ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2c76ce 1%, #053989 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2c76ce), color-stop(98%,#053989)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2c76ce 1%,#053989 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2c76ce 1%,#053989 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c76ce', endColorstr='#053989',GradientType=0 ); /* IE6-9 */
+	color:white;
+	padding: 8px;
+border-radius: 5px;
+margin-left: 40px;
+height: 30px;
+font-size: 13px;
+padding-left: 15px;
+padding-right: 15px;
+	
+}
+tbody tr:nth-child(even) {
+    background-color: #d6ecff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e4e7e9;
+}
+
+.header-text{
+	float:right;
+	
+}
+
+.form-control > form > input{
+	width:450px;
+	height:25px;
+	border-radius:5px;	
+}
+
+.form-control > form > select{
+	width:450px;
+	height:25px;
+	border-radius:5px;	
+}
+
+.active > img, .active > a >img{
+	opacity:1 !important;
+}
+
+.active > div.popText , .active > a> div.popText {
+	width:140px !important;
+	padding-left:30px;
+}
+
+.active > a{
+	text-decoration:none;
+}
+
+.active > div.popText > div.text , .active > a > div.popText > div.text {
+	opacity:1;
+}
+
+.form-control > form > input:focus{
+	background-color:#e5e5e5;
+}
+
+.form-control{
+	width: 665px;
+	margin: 0 auto;
+	margin-top:100px;
+}
+
+.form-control > form >.linkBtn{
+	width:180px;
+	float: right;
+margin-right: 25px;
+padding-top:3px;
+}
+
+.formLabel{
+	width:180px;
+	display:inline-block;
+}
+
+.form-control > form > label{
+	
+	
+}
+
+.header-text > span > input{
+	border-radius:5px;
+	height:20px;
+	text-align:center;
+}
+
+.ribbon{
+	width: 378px !important;
+	height: 382px;
+}
+}

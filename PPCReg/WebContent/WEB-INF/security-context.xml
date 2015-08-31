@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/security
+    	http://www.springframework.org/schema/security/spring-security-3.1.xsd
+    	http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+ 		http://www.springframework.org/schema/mvc
+ 		http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/context
+ 		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 		
+ 	<http pattern="/resources/**" security="none" />
+ 	<http pattern="/download/**" security="none" />
+    <http pattern="/favicon.ico" security="none" />
+    
+    <http auto-config="true" use-expressions="true">
+    
+    	<intercept-url pattern="/" access="permitAll" />
+    	<intercept-url pattern="/login/**" access="permitAll" />
+    	<intercept-url pattern="/register/**" access="permitAll" />
+    	<intercept-url pattern="/check" access="permitAll" />
+    	<intercept-url pattern="/registrationProcess/**" access="permitAll" />
+    	<intercept-url pattern="/ads" access="permitAll"/>
+    	<intercept-url pattern="/ads/" access="permitAll"/>
+    	<intercept-url pattern="/ads/**" access="permitAll"/>
+    	<!-- initial dashboard -->
+    	<intercept-url pattern="/user" access="hasRole('Admin')" />
+    	<intercept-url pattern="/user/" access="hasRole('Admin')" />
+    	<intercept-url pattern="/user/**" access="hasRole('Admin')"/>
+    	<intercept-url pattern="/upload" access="isAuthenticated()"/>
+    	<intercept-url pattern="/upload/" access="isAuthenticated()"/>
+    	<intercept-url pattern="/upload/" access="isAuthenticated()"/>
+    	<intercept-url pattern="/advertisement/**" access="isAuthenticated()"/>
+    	<intercept-url pattern="/advertisement" access="isAuthenticated()"/>
+    	<intercept-url pattern="/advertisement/" access="isAuthenticated()"/>
+    	
+    	
+    	<intercept-url pattern="/pedigree/**" access="isAuthenticated()"/>
+    	<intercept-url pattern="/pedigree" access="isAuthenticated()"/>
+    	
+    	<intercept-url pattern="/print" access="hasRole('Admin')"/>
+    	<intercept-url pattern="/print" access="hasRole('Admin')"/>
+    	<intercept-url pattern="/print/**" access="hasRole('Admin')"/>
+    	
+    	
+    	
+    	
+		<!-- resource file links are allowed -->
+    	<intercept-url pattern="/asset/**" access="permitAll" />
+    	<!-- all other links are denied -->
+    	<intercept-url pattern="/**" access="denyAll" />
+    	
+    	<form-login login-page="/login" authentication-failure-url="/login?error=t" default-target-url="/pedigree/list"
+    		always-use-default-target="true" />
+    	<logout logout-success-url="/login" logout-url="/logout" />
+    </http>
+    
+    <authentication-manager>
+    	<authentication-provider>
+    	
+    		<password-encoder hash="md5" />
+    		<jdbc-user-service data-source-ref="dataSource" 
+    			users-by-username-query="select username, password,is_active from USER where username=?"
+    			authorities-by-username-query="select username, role from USER where username=?" />
+    	</authentication-provider>
+    </authentication-manager>
+    
+</beans:beans>
